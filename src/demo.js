@@ -18,14 +18,14 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    background: "#243447",
     width: 600
   },
   header: {
     alignItems: "flex-start"
   },
   avatar: {
-    backgroundColor: red[500]
+    width: 49,
+    height: 49
   }
 }));
 
@@ -37,12 +37,24 @@ export default function RecipeReviewCard() {
       <CardHeader
         className={classes.header}
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
+          <Avatar
+            aria-label="avatar"
+            className={classes.avatar}
+            src="https://pbs.twimg.com/profile_images/1175295104912961537/TO5Wcyda_reasonably_small.jpg"
+          />
         }
-        title="Oxxxymiron @norimyxxxo · Nov 6"
-        subheader="Наконец-то на самом заседании, а не в зале трансляции. Семья Егора провела в зал как брата ^_^, приставы все поняли и на этот раз отреагировали адекватно. трансляции. Семья Егора провела в зал как брата ^_^, приставы все поняли и на этот раз отреагировали адекватно."
+        title={
+          <Typography variant="subtitle2">
+            Oxxxymiron @norimyxxxo · Nov 6
+          </Typography>
+        }
+        subheader={
+          <Typography variant="body2">
+            Наконец-то на самом заседании, а не в зале трансляции. Семья Егора
+            провела в зал как брата ^_^, приставы все поняли и на этот раз
+            отреагировали адекватно.
+          </Typography>
+        }
       />
     </Card>
   );
