@@ -5,11 +5,13 @@
   },
   "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/cards/RecipeReviewCard.js",
   "dependencies": {
-    "react-dom": "latest",
-    "react": "latest",
-    "clsx": "latest",
+    "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
-    "@material-ui/core": "latest"
+    "clsx": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-emotion": "10.0.0",
+    "react-scroll-horizontal": "1.6.2"
   },
   "keywords": [],
   "name": "",

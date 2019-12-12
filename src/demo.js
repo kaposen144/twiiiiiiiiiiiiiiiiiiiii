@@ -15,6 +15,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -26,6 +27,9 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     width: 49,
     height: 49
+  },
+  bottom: {
+    alignItems: "space-between"
   }
 }));
 
@@ -49,11 +53,27 @@ export default function RecipeReviewCard() {
           </Typography>
         }
         subheader={
-          <Typography variant="body2">
-            Наконец-то на самом заседании, а не в зале трансляции. Семья Егора
-            провела в зал как брата ^_^, приставы все поняли и на этот раз
-            отреагировали адекватно.
-          </Typography>
+          <div>
+            <Typography variant="body2">
+              Наконец-то на самом заседании, а не в зале трансляции. Семья Егора
+              провела в зал как брата ^_^, приставы все поняли и на этот раз
+              отреагировали адекватно.
+            </Typography>
+            <CardActions style={{ justifyContent: "space-between" }}>
+              <Button aria-label="add to favorites">
+                <FavoriteIcon />2
+              </Button>
+              <Button aria-label="show-more">
+                <ShareIcon /> 3
+              </Button>
+              <Button aria-label="show-more">
+                <ShareIcon />
+              </Button>
+              <Button aria-label="show more">
+                <ExpandMoreIcon />
+              </Button>
+            </CardActions>
+          </div>
         }
       />
     </Card>
